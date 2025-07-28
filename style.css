@@ -124,3 +124,12 @@ body {
   background-color: #ffcc00;
   color: #002366;
 }
+
+.footer {
+  background-color: #002366; /* Royal blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.95em;
+  margin-top: 40px;
+}
