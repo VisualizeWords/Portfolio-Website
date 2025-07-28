@@ -9,9 +9,10 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: white;
   color: #002366;
+  line-height: 1.6;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Bar */
 .navbar {
   background-color: #002366; /* Royal Blue */
   padding: 20px 0;
@@ -42,7 +43,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Underline effect */
 .nav-links li a::after {
   content: '';
   position: absolute;
@@ -54,20 +54,68 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-/* On hover: underline grows and text color changes */
 .nav-links li a:hover::after {
   width: 100%;
 }
 
 .nav-links li a:hover {
-  color: #ffcc00; /* Golden yellow hover color */
+  color: #ffcc00; /* Golden yellow */
 }
 
-/* Dummy Sections for Scroll Target */
+/* Section Base Style */
 .section {
-  padding: 100px 20px;
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
-  font-size: 1.5em;
-  background-color: #f0f8ff;
-  border-bottom: 1px solid #ddd;
+}
+
+/* Projects */
+.project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-top: 20px;
+  border-left: 5px solid #002366;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 2px solid #002366;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+  background-color: #f9f9ff;
+}
+
+.contact-form button {
+  background-color: #002366;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ffcc00;
+  color: #002366;
 }
