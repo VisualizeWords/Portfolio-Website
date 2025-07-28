@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +6,22 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: white;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
   color: #002366;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styles */
 .navbar {
-  background-color: #002366;
+  background-color: #002366; /* Royal Blue */
   padding: 20px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
   width: 90%;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -28,36 +29,45 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .nav-links li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: bold;
   font-size: 1.1em;
   position: relative;
   padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
+/* Underline effect */
 .nav-links li a::after {
   content: '';
   position: absolute;
+  left: 0;
+  bottom: 0;
   width: 0%;
   height: 2px;
-  bottom: 0;
-  left: 0;
   background-color: white;
   transition: width 0.3s ease-in-out;
 }
 
+/* On hover: underline grows and text color changes */
 .nav-links li a:hover::after {
   width: 100%;
 }
 
-/* Dummy Sections */
+.nav-links li a:hover {
+  color: #ffcc00; /* Golden yellow hover color */
+}
+
+/* Dummy Sections for Scroll Target */
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
   font-size: 1.5em;
+  background-color: #f0f8ff;
+  border-bottom: 1px solid #ddd;
 }
