@@ -2,47 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peter N. A. | Front-End Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Peter N. A.</h1>
-      <p>Front-End Developer | HTML, CSS, JavaScript</p>
+      <p>Front-End Developer</p>
     </div>
   </header>
 
-  <nav>
-    <ul class="container">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>Hello! I'm Peter, a passionate front-end developer who loves creating responsive and user-friendly websites. I'm currently learning full-stack development, starting with front-end technologies like HTML, CSS, and JavaScript.</p>
-  </section>
-
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio site to showcase my skills and projects using HTML, CSS, and JavaScript.</p>
-    </div>
-    <div class="project">
-      <h3>Bible Stories Animation</h3>
-      <p>A creative app that converts Bible stories into animated videos using AI tools and APIs.</p>
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate front-end developer who specializes in HTML, CSS, and JavaScript. I create responsive and visually appealing websites.</p>
     </div>
   </section>
 
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <p>Email: peter@example.com</p>
-    <p>GitHub: <a href="https://github.com/VisualizeWords " target="_blank">VisualizeWords</a></p>
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio site showcasing my skills and projects.</p>
+      </div>
+      <div class="project">
+        <h3>Landing Page</h3>
+        <p>A clean, mobile-friendly landing page for businesses and services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
