@@ -81,41 +81,14 @@ body {
 
 /* Contact Form */
 .contact-form {
-  max-width: 600px;
-  margin: 20px auto 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 2px solid #002366;
-  border-radius: 6px;
-  font-size: 1em;
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #ffcc00;
-  background-color: #f9f9ff;
-}
-
-.contact-form button {
-  background-color: #002366;
-  color: white;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #ffcc00;
-  color: #002366;
+  gap: 20px;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 35, 102, 0.2);
 }
