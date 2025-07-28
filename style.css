@@ -2,8 +2,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: white;
-  color: #002366; /* Royal blue */
+  background-color: white;  /* ⚪ White background for body */
+  color: #002366;            /* 🔵 Royal blue text */
   line-height: 1.6;
 }
 
@@ -15,15 +15,15 @@ body {
 
 /* Header */
 header {
-  background-color: #002366;
-  color: white;
+  background-color: #002366;  /* 🔵 Royal blue background */
+  color: white;               /* ⚪ White text */
   padding: 40px 20px;
   text-align: center;
 }
 
 /* Navigation */
 nav {
-  background-color: #e6eefe;
+  background-color: #002366;  /* 🔵 Royal blue background */
 }
 
 nav ul {
@@ -31,6 +31,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -38,13 +39,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #002366;
+  color: white;              /* ⚪ White text links */
   text-decoration: none;
   font-weight: bold;
+  padding: 10px;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: white;
+  color: #002366;            /* 🔵 Hover effect */
+  border-radius: 5px;
 }
 
 /* Sections */
@@ -52,9 +56,15 @@ section {
   padding: 40px 0;
 }
 
+#about, #projects, #contact {
+  background-color: #f0f6ff;   /* Light blue background for contrast */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 .project {
-  background-color: #f0f6ff;
-  border-left: 5px solid #002366;
+  background-color: white;
+  border-left: 5px solid #002366; /* 🔵 Royal blue border */
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -62,8 +72,8 @@ section {
 
 /* Footer */
 footer {
-  background-color: #002366;
-  color: white;
+  background-color: #002366;   /* 🔵 Royal blue */
+  color: white;                /* ⚪ White text */
   text-align: center;
   padding: 20px 0;
 }
