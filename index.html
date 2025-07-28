@@ -8,35 +8,52 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="home">
     <div class="container">
       <h1>Peter N. A.</h1>
       <p>Front-End Developer</p>
     </div>
   </header>
 
-  <section class="about">
+  <!-- About Section -->
+  <section class="about" id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a passionate front-end developer who specializes in HTML, CSS, and JavaScript. I create responsive and visually appealing websites.</p>
+      <p>I am a passionate front-end developer who specializes in HTML, CSS, and JavaScript. I build responsive and visually engaging websites.</p>
     </div>
   </section>
 
-  <section class="projects">
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project">
         <h3>Portfolio Website</h3>
-        <p>A personal portfolio site showcasing my skills and projects.</p>
+        <p>A personal portfolio site showcasing my work and skills.</p>
       </div>
       <div class="project">
         <h3>Landing Page</h3>
-        <p>A clean, mobile-friendly landing page for businesses and services.</p>
+        <p>A clean, mobile-friendly landing page template for businesses.</p>
       </div>
     </div>
   </section>
 
-  <section class="contact">
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Me</h2>
       <form action="#" method="POST">
@@ -54,10 +71,12 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Peter N. A. All rights reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
