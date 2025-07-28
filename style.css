@@ -1,124 +1,120 @@
-/* Reset default */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Background */
+/* Base Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
   color: #002366;
   line-height: 1.6;
 }
 
-/* Navigation */
+/* Header & Navigation */
+.header {
+  background-color: #002366; /* Royal Blue */
+}
+
 .navbar {
-  background-color: #002366; /* Royal blue */
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  background-color: #002366;
+  padding: 20px 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 40px;
 }
 
-.nav-links a {
-  color: #ffffff;
+.nav-links li a {
   text-decoration: none;
+  color: white;
   font-weight: bold;
   font-size: 1.1em;
   position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #ffcc00;
-}
-
-.nav-links a::after {
+.nav-links li a::after {
   content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
-  background: #ffcc00;
-  bottom: -5px;
   left: 0;
-  transition: 0.3s ease;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
 }
 
-.nav-links a:hover::after {
+.nav-links li a:hover::after {
   width: 100%;
 }
 
-/* Sections */
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 80px 20px;
+  max-width: 900px;
   margin: auto;
   text-align: center;
 }
 
-h1, h2 {
-  color: #002366;
-  margin-bottom: 20px;
-}
-
-p {
-  color: #333;
-  font-size: 1.05em;
-}
-
 /* Project Card */
 .project-card {
-  background-color: #f1f1f1;
+  background-color: #f4f4f4;
   padding: 25px;
+  margin-top: 20px;
+  border-left: 6px solid #002366;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 700px;
-  margin: auto;
+  text-align: left;
 }
 
 /* Contact Form */
 .contact-form {
-  max-width: 700px;
+  width: 100%;
+  max-width: 800px;
   margin: 30px auto;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 35, 102, 0.2);
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 35, 102, 0.2);
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 14px;
-  font-size: 1.05em;
+  padding: 16px;
   border: 2px solid #002366;
   border-radius: 6px;
+  font-size: 1.05em;
   width: 100%;
+  resize: vertical;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #ffcc00;
-  background-color: #fffdf5;
+  background-color: #ffffff;
 }
 
 .contact-form button {
   background-color: #002366;
   color: white;
   font-weight: bold;
-  padding: 14px;
   border: none;
+  padding: 14px;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
