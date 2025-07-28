@@ -1,4 +1,4 @@
-/* Base Styles */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -20,10 +19,12 @@ body {
   padding: 20px;
 }
 
-/* Navigation Bar */
+/* Navigation Bar - White Underline Hover */
 .navbar {
   background-color: #002366; /* Royal Blue */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 999;
 }
 
 .nav-container {
@@ -40,19 +41,35 @@ body {
 }
 
 .nav-links li a {
+  position: relative;
   text-decoration: none;
-  color: silver;
+  color: white;
   font-weight: bold;
-  transition: color 0.3s ease;
   font-size: 1.1em;
+  padding: 5px 0;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: white;
-  border-bottom: 2px solid silver;
 }
 
-/* Header (Hero Section) */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Header (Hero) */
 header.home {
   background-color: #002366;
   color: white;
